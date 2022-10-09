@@ -4,7 +4,8 @@
   "info": {
     "singularName": "page",
     "pluralName": "pages",
-    "displayName": "page"
+    "displayName": "page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,6 +22,23 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "section.section-two-columns",
+        "section.section-grid",
+        "section.section-content"
+      ]
+    },
+    "footer_text": {
+      "type": "richtext",
+      "required": true
+    },
+    "menu": {
+      "type": "component",
+      "repeatable": false,
+      "component": "menu.menu"
     }
   }
 }
